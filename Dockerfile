@@ -6,4 +6,5 @@ while true\n\
 do\n\
 sleep 1\n\
 done" > /docker-entrypoint.sh
+VOLUME /etc/wireguard
 ENTRYPOINT ["/docker-entrypoint.sh"]
