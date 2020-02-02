@@ -7,3 +7,4 @@ sleep infinity' > /usr/local/bin/docker-entrypoint.sh && \
 chmod +x /usr/local/bin/docker-entrypoint.sh
 VOLUME /etc/wireguard
 ENTRYPOINT ["docker-entrypoint.sh"]
+EXPOSE 51820/udp
