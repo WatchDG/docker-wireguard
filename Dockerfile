@@ -1,5 +1,5 @@
 FROM alpine
-RUN apk add --no-cache bash openresolv wireguard-tools
+RUN apk update && apk add --no-cache bash openresolv wireguard-tools
 RUN echo $'#!/usr/bin/env bash\n\
 set -eo pipefail\n\
 wg-quick $1 $2\n\
